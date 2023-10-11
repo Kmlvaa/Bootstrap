@@ -89,6 +89,21 @@
     row-gap: 40px;
     column-gap: 20px;
 }
+@media screen and (max-width:476px) {
+    .container{
+        grid-template-columns: auto;
+    }
+}
+@media screen and (min-width:476px) and (max-width:769px) {
+    .container{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .container{
+        grid-template-columns: auto auto auto;
+    }
+}
 .container .card{
     width: auto;
 }
@@ -100,6 +115,24 @@
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+}
+@media screen and (max-width:476px) {
+    .rectangles{
+        grid-template-columns: auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:476px) and (max-width:769px) {
+    .rectangles{
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .rectangles{
+        grid-template-columns: auto auto auto auto;
+        row-gap: 10px;
+    }
 }
 .rectangles div{
     background-color: rgb(57, 210, 149);
@@ -115,6 +148,24 @@
    top: 700px;
    justify-content: center;
    align-items: center;
+}
+@media screen and (max-width:476px) {
+    .buttom{
+        grid-template-columns: auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:476px) and (max-width:769px) {
+    .buttom{
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .buttom{
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
 }
 .buttom .card{
     column-gap: 40px;
@@ -147,6 +198,24 @@
     float: right;
     background-color: rgb(31, 42, 76);
     border: 0;
+}
+@media screen and (max-width:476px) {
+    .footer .right{
+        grid-template-columns: auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:476px) and (max-width:769px) {
+    .footer .right{
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .footer .right{
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
 }
 .footer .right li{
     background-color: rgb(31, 42, 76);
