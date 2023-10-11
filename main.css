@@ -103,18 +103,28 @@
 }
 .rectangles div{
     background-color: rgb(57, 210, 149);
-    height: 280px;
-    width: 280px;
+    height: 250px;
+    width: 250px;
     display: flex;
     align-self: center;
     justify-self: center;
 }
 .buttom{
-    margin-top: 300px;
+   display: grid;
+   grid-template-columns: 250px 300px 250px;
+   top: 700px;
+   justify-content: center;
+   align-items: center;
 }
 .buttom .card{
+    column-gap: 40px;
     border: 0;
 }
+.buttom .card-center img{
+    width: 225px;
+    height: 225px;
+}
+
 .buttom img{
     height: 200px;
     width: 200px;
@@ -123,7 +133,7 @@
 }
 .footer{
     position: relative;
-    top: 600px;
+    top: 800px;
     display: flex;
     justify-content: space-around;
     width: 100%;
