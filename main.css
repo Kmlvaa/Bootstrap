@@ -1,0 +1,169 @@
+.header1{
+    height: 50px;
+    background-color: rgb(31, 42, 76);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 150px;
+}
+.header1 .left, .header1 .right{
+    display: flex;
+    flex-direction: row;
+}
+.header1 .left div{
+    width: 50px;
+    height: 5px;
+    margin: 5px;
+    background-color: rgb(57, 210, 149);
+    border-radius: 5px;
+}
+.header1 .right div{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(53, 209, 147);
+    border-radius: 5px;
+}
+.header2{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header2 .right{
+    display: flex;
+    flex-direction: row;
+}
+.header2 .left div{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(53, 209, 147);
+    border-radius: 5px;
+}
+.header2 .right div{
+    width: 50px;
+    height: 5px;
+    margin: 5px;
+    background-color: rgb(57, 210, 149);
+    border-radius: 5px;
+}
+.body1{
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(31, 42, 76);
+    color: white;
+    padding-block: 80px;
+}
+.body1 div{
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 65px;
+}
+.body1 button{
+    border-radius: 30px;
+}
+.division-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+    top: 338px;
+
+}
+.division-div div{
+    margin-inline: 20px;
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: rgb(57, 210, 149);
+}
+.container{
+    display: grid;
+    position: relative;
+    top: 500px;
+    grid-template-columns: auto auto auto;
+    margin-inline: auto;
+    text-align: center;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+.container .card{
+    width: auto;
+}
+.rectangles{
+    display: grid;
+    position: relative;
+    top: 600px;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.rectangles div{
+    background-color: rgb(57, 210, 149);
+    height: 280px;
+    width: 280px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.buttom{
+    margin-top: 300px;
+}
+.buttom .card{
+    border: 0;
+}
+.buttom img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.footer{
+    position: relative;
+    top: 600px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(31, 42, 76);
+    padding-block: 50px;
+    
+}
+.footer .right{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    float: right;
+    background-color: rgb(31, 42, 76);
+    border: 0;
+}
+.footer .right li{
+    background-color: rgb(31, 42, 76);
+    border: 0;
+    color: white;
+}
+.footer .card{
+    background-color: rgb(31, 42, 76);
+    border: 0;
+    padding-inline: 20px;
+}
+.footer .left{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    float: left;
+}
+.footer .left div{
+    width: 50px;
+    height: 5px;
+    margin: 5px;
+    background-color: rgb(57, 210, 149);
+    border-radius: 5px;
+}
+.footer .left .above{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(57, 210, 149);
+    border-radius: 5px;
+}
