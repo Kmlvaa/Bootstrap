@@ -1,6 +1,10 @@
+:root{
+    --color-1:rgb(31, 42, 76);
+    --color-2:rgb(57, 210, 149);
+}
 .header1{
     height: 50px;
-    background-color: rgb(31, 42, 76);
+    background-color: var(--color-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,14 +18,14 @@
     width: 50px;
     height: 5px;
     margin: 5px;
-    background-color: rgb(57, 210, 149);
+    background-color: var(--color-2);
     border-radius: 5px;
 }
 .header1 .right div{
     width: 30px;
     height: 30px;
     margin: 5px;
-    background-color: rgb(53, 209, 147);
+    background-color: var(--color-2);
     border-radius: 5px;
 }
 .header2{
@@ -37,48 +41,117 @@
 .header2 .left div{
     width: 120px;
     height: 50px;
-    background-color: rgb(53, 209, 147);
+    background-color: var(--color-1);
     border-radius: 5px;
 }
 .header2 .right div{
     width: 50px;
     height: 5px;
     margin: 5px;
-    background-color: rgb(57, 210, 149);
+    background-color: var(--color-2);
     border-radius: 5px;
 }
 .body1{
+    box-sizing: border-box;
     position: absolute;
     height: 400px;
     width: 100%;
-    background-color: rgb(31, 42, 76);
+    background-color: var(--color-1);
     color: white;
     padding-block: 80px;
 }
 .body1 div{
     margin: auto;
     text-align: center;
-    width: 300px;
-    margin-bottom: 65px;
+    width: 400px;
+    margin-bottom: 20px;
 }
-.body1 button{
+.body1 > div > .green-line{
+    display: flex;
+    justify-content: center;
+}
+.body1 > div > .green-line > div{
+    margin-inline: 5px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--color-2);
+}
+.body1 > div > .green-line > div:nth-of-type(1) {width: 70px;}
+.body1 > div > .green-line > div:nth-of-type(2) {width: 150px;}
+.body1 > div > .green-line > div:nth-of-type(3) {width: 100px;}
+
+.body1 > div > .text-line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.body1 > div > .text-line > div{
+    margin-inline: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+.body1 > div > .text-line > div:nth-of-type(1) {width: 60px;}
+.body1 > div > .text-line > div:nth-of-type(2) {width: 50px;}
+.body1 > div > .text-line > div:nth-of-type(3) {width: 50px;}
+.body1 > div > .text-line > div:nth-of-type(4) {width: 65px;}
+.body1 > div > .text-line > div:nth-of-type(5) {width: 30px;}
+.body1 > div > .text-line > div:nth-of-type(6) {width: 80px;}
+.body1 > div > .text-line > div:nth-of-type(7) {width: 60px;}
+.body1 > div > .text-line > div:nth-of-type(8) {width: 35px;}
+.body1 > div > .text-line > div:nth-of-type(9) {width: 60px;}
+.body1 > div > .text-line > div:nth-of-type(10) {width: 40px;}
+.body1 > div > .text-line > div:nth-of-type(11) {width: 18px;}
+.body1 > div > .text-line > div:nth-of-type(12) {width: 35px;}
+
+.body1 > div > .button-line{
+    width: 150px;
+    height: 40px;
     border-radius: 30px;
+    background-color: var(--color-2);
 }
 .division-div{
     position: relative;
     display: flex;
     justify-content: center;
-    row-gap: 20px;
+    column-gap: 60px;
     top: 338px;
-
 }
 .division-div div{
     margin-inline: 20px;
     width: 200px;
     height: 120px;
     border-radius: 5px;
-    background-color: rgb(57, 210, 149);
+    background-color: var(--color-2);
 }
+.green-line-part{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+    top: 400px;
+}
+.green-line-part > div{
+    height: 12px;
+    background-color: var(--color-2);
+    border-radius: 10px;
+}
+span{
+    position: relative;
+}
+span:nth-of-type(1){
+    top: 130px;
+}
+span:nth-of-type(2){
+    top: 250px;
+}
+.green-line-part > div:nth-of-type(1) {width: 100px;}
+.green-line-part > div:nth-of-type(2) {width: 70px;}
 .container{
     display: grid;
     position: relative;
@@ -88,8 +161,94 @@
     text-align: center;
     row-gap: 40px;
     column-gap: 20px;
+} 
+.container .card{
+    width: 380px;
+    border: 5px solid var(--color-1);
+    border-radius: 10px;
 }
-@media screen and (max-width:476px) {
+.container .card .image{
+    margin: 15px;
+    width: auto;
+    height: 180px;
+    border-radius: 10px;
+    background-color: var(--color-1);
+}
+.container .card .card-body{
+    border-bottom: 5px solid var(--color-1);
+}
+.container .card .card-body .header{
+    margin-bottom: 40px;
+}
+.container .card .card-body .header .left{
+    height: 5px;
+    width: 40px;
+    background-color: var(--color-2);
+    float: left;
+    border-radius: 5px;
+}
+.container .card .card-body .header .right{
+    float: right;
+    height: 5px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.container .card .card-body .header .right > div{
+    margin-inline-start: 5px;
+    border-radius: 5px;
+    height: 5px;
+    width: 20px;
+    background-color: var(--color-2);
+}
+.container .card .card-body .body{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 40px;
+}
+.container .card .card-body .body > div{
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--color-1);
+}
+.container > .card > .card-body > .body > div:nth-of-type(1) {width: 100px;}
+.container > .card > .card-body > .body > div:nth-of-type(2) {width: 70px;}
+.container > .card > .card-body > .body > div:nth-of-type(3) {width: 85px;}
+.container > .card > .card-body > .body > div:nth-of-type(4) {width: 75px;}
+.container > .card > .card-body > .body > div:nth-of-type(5) {width: 50px;}
+.container > .card > .card-body > .body > div:nth-of-type(6) {width: 65px;}
+.container > .card > .card-body > .body > div:nth-of-type(7) {width: 85px;}
+.container > .card > .card-body > .body > div:nth-of-type(8) {width: 95px;}
+.container > .card > .card-body > .body > div:nth-of-type(9) {width: 50px;}
+.container > .card > .card-body > .body > div:nth-of-type(10) {width: 105px;}
+
+.container .card .footer-1{
+    height: 50px;
+    padding: 15px;
+}
+.container .card .footer-1 .left{
+    height: 20px;
+    width: 40px;
+    background-color: var(--color-2);
+    float: left;
+    border-radius: 5px;
+}
+.container .card .footer-1 .right{
+    float: right;
+    height: 5px;
+    width: 75px;
+    display: flex;
+    flex-direction: row;
+}
+.container .card .footer-1 .right > div{
+    margin-inline-start: 5px;
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-2);
+}
+ @media screen and (max-width:476px) {
     .container{
         grid-template-columns: auto;
     }
@@ -103,10 +262,7 @@
     .container{
         grid-template-columns: auto auto auto;
     }
-}
-.container .card{
-    width: auto;
-}
+} 
 .rectangles{
     display: grid;
     position: relative;
@@ -115,6 +271,20 @@
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+}
+.rectangles div{
+    background-color: var(--color-2);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.rectangles div:nth-child(3){
+    background-image: repeating-linear-gradient(145deg, var(--color-2), var(--color-2) 7.5px, var(--color-1) 7.5px, var(--color-1) 15px);
+}
+.rectangles div:last-child{
+    background-image: repeating-linear-gradient(145deg, var(--color-2), var(--color-2) 7.5px, var(--color-1) 7.5px, var(--color-1) 15px);
 }
 @media screen and (max-width:476px) {
     .rectangles{
@@ -134,99 +304,114 @@
         row-gap: 10px;
     }
 }
-.rectangles div{
-    background-color: rgb(57, 210, 149);
-    height: 250px;
-    width: 250px;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-}
-.buttom{
+.container-2{
    display: grid;
-   grid-template-columns: 250px 300px 250px;
+   position: relative;
+   grid-template-columns: 250px 250px 250px;
    top: 700px;
    justify-content: center;
    align-items: center;
+   column-gap: 80px;
 }
-@media screen and (max-width:476px) {
-    .buttom{
-        grid-template-columns: auto;
-        row-gap: 10px;
-    }
-}
-@media screen and (min-width:476px) and (max-width:769px) {
-    .buttom{
-        grid-template-columns: auto auto;
-        row-gap: 10px;
-    }
-}
-@media screen and (min-width:769px) and (max-width:1200px) {
-    .buttom{
-        grid-template-columns: auto auto auto;
-        row-gap: 10px;
-    }
-}
-.buttom .card{
-    column-gap: 40px;
+.container-2 .card-circle{
     border: 0;
 }
-.buttom .card-center img{
-    width: 225px;
-    height: 225px;
-}
-
-.buttom img{
-    height: 200px;
+.card-circle .image{
     width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    background-color: var(--color-1);
+    margin-bottom: 50px;
+    margin: auto;
 }
+.card-circle .bigger{
+    width: 250px;
+    height: 250px;
+}
+.card-circle .card-body .body-1{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.card-circle .card-body .body-1 > div{
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--color-1);
+   
+}
+.card-circle > .card-body > .body-1 > div:nth-of-type(1) {width: 100px;}
+.card-circle > .card-body > .body-1 > div:nth-of-type(2) {width: 70px;}
+.card-circle > .card-body > .body-1 > div:nth-of-type(3) {width: 85px;}
+.card-circle > .card-body > .body-1 > div:nth-of-type(4) {width: 75px;}
+.card-circle > .card-body > .body-1 > div:nth-of-type(5) {width: 50px;}
+
+.card-circle .card-body .body-2{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.card-circle .card-body .body-2 > div{
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--color-2);
+}
+.card-circle > .card-body > .body-2 > div:nth-of-type(1) {width: 100px;}
+.card-circle > .card-body > .body-2 > div:nth-of-type(2) {width: 70px;}
+
+
+
+
+
 .footer{
     position: relative;
     top: 800px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: rgb(31, 42, 76);
+    background-color: var(--color-1);
     padding-block: 50px;
-    
 }
-.footer .right{
-    display: grid;
-    grid-template-columns: auto auto auto;
+.footer > .right{
     float: right;
-    background-color: rgb(31, 42, 76);
-    border: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-1);
+    width: 490px;
+    height: 200px;
 }
-@media screen and (max-width:476px) {
-    .footer .right{
-        grid-template-columns: auto;
-        row-gap: 10px;
-    }
+.footer > .block{
+    width: 130px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
-@media screen and (min-width:476px) and (max-width:769px) {
-    .footer .right{
-        grid-template-columns: auto auto;
-        row-gap: 10px;
-    }
+.footer > .right > .block > .header{
+    background-color: var(--color-2);
+    border-radius: 10px;
+    height: 10px;
+    width: 100px;
+    margin-bottom: 25px;
 }
-@media screen and (min-width:769px) and (max-width:1200px) {
-    .footer .right{
-        grid-template-columns: auto auto auto;
-        row-gap: 10px;
-    }
+.footer > .right > .block > .body > div{
+    background-color: white;
+    border-radius: 5px;
+    height: 5px;
+    margin-bottom: 20px;
 }
-.footer .right li{
-    background-color: rgb(31, 42, 76);
-    border: 0;
-    color: white;
-}
-.footer .card{
-    background-color: rgb(31, 42, 76);
-    border: 0;
-    padding-inline: 20px;
-}
+.footer > .right > .block > .body > div:nth-of-type(1) {width: 80px;}
+.footer > .right > .block > .body > div:nth-of-type(2) {width: 50px;}
+.footer > .right > .block > .body > div:nth-of-type(3) {width: 95px;}
+.footer > .right > .block > .body > div:nth-of-type(4) {width: 45px;}
+
 .footer .left{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -236,13 +421,32 @@
     width: 50px;
     height: 5px;
     margin: 5px;
-    background-color: rgb(57, 210, 149);
+    background-color: var(--color-2);
     border-radius: 5px;
 }
+
 .footer .left .above{
     width: 30px;
     height: 30px;
     margin: 5px;
-    background-color: rgb(57, 210, 149);
+    background-color: var(--color-2);
     border-radius: 5px;
+}
+@media screen and (max-width:476px) {
+    .footer .right{
+        grid-template-columns: auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:476px) and (max-width:769px) {
+    .footer .right{
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .footer .right{
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
 }
